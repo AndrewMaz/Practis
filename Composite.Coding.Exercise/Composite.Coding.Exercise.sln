@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Coding.Exercise", "Bridge.Coding.Exercise\Bridge.Coding.Exercise.csproj", "{58C2E046-B080-4ABA-9CBC-DCE36C42F77B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite.Coding.Exercise", "Composite.Coding.Exercise\Composite.Coding.Exercise.csproj", "{6A2D775C-6C5B-4839-849B-43B05FCB543C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{58C2E046-B080-4ABA-9CBC-DCE36C42F77B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58C2E046-B080-4ABA-9CBC-DCE36C42F77B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58C2E046-B080-4ABA-9CBC-DCE36C42F77B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58C2E046-B080-4ABA-9CBC-DCE36C42F77B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A2D775C-6C5B-4839-849B-43B05FCB543C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2D775C-6C5B-4839-849B-43B05FCB543C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2D775C-6C5B-4839-849B-43B05FCB543C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2D775C-6C5B-4839-849B-43B05FCB543C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2CF7733E-C69D-451E-9B9C-99E96F935192}
+		SolutionGuid = {4F9F2668-C152-4E91-BE9E-2112E32BC498}
 	EndGlobalSection
 EndGlobal
