@@ -1998,7 +1998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHitObject: {fileID: 0}
   circleRadius: 0.5
-  maxDistance: 6
+  maxDistance: 4
   layerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -2019,7 +2019,7 @@ MonoBehaviour:
   chaseSpeed: 3
   timeToWait: 5
   timeToChase: 3
-  minDistanceToPlayer: 1
+  minDistanceToPlayer: 0.95
   enemyModelTransform: {fileID: 5305309687116543242}
 --- !u!70 &2369140034119599846
 CapsuleCollider2D:
