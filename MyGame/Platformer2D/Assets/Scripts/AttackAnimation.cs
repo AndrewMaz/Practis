@@ -22,6 +22,7 @@ public class AttackAnimation : StateMachineBehaviour
         AttackController attackController = animator.transform.root.GetComponent<AttackController>();
         attackController.AttackFinished();
         attackController.IsHeavySlash = false;
+        attackController.IsStealTempest = false;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

@@ -5,10 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
+    GameObject _player, _canvases;
+
+    private void Start()
+    {
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _canvases = GameObject.FindGameObjectWithTag("Canvases");
+    }
     public void Restart()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        Destroy(_player);
+        Destroy(_canvases);
+        SceneManager.LoadScene(1);
+        gameObject.SetActive(false);
         Time.timeScale = 1f;
     }
 

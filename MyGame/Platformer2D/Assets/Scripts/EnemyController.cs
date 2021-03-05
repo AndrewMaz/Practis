@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] float attackCD = 2f;
     [SerializeField] float minDistanceToPlayer = 1.5f;
     [SerializeField] Transform enemyModelTransform;
+    [SerializeField] EnemyHealth enemyHealth;
 
     Rigidbody2D _rb;
     Transform _playerTransform;
@@ -62,31 +63,37 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        if (_isAttacking)
+        if (enemyHealth.IsAirBorne)
+        {
+            _walkSpeed = 0f;
+        }
+
+
+        if (_isAttacking && !enemyHealth.IsAirBorne)
             StartCdTimer();
 
-        if (_isChasingPlayer)
+        if (_isChasingPlayer && !enemyHealth.IsAirBorne)
             StartChaseTimer();
 
-        if (_isWait && !_isChasingPlayer)
+        if (_isWait && !_isChasingPlayer && !enemyHealth.IsAirBorne)
             StartWaitTimer();
 
-        if (ShouldWait())
+        if (ShouldWait() && !enemyHealth.IsAirBorne)
             _isWait = true;
     }
     void FixedUpdate()
     {
         _nextPoint = Vector2.right * _walkSpeed * Time.fixedDeltaTime;
 
-        if (Mathf.Abs(DistanceToPlayer()) < minDistanceToPlayer && _isChasingPlayer)
+        if (Mathf.Abs(DistanceToPlayer()) < minDistanceToPlayer && _isChasingPlayer && !enemyHealth.IsAirBorne)
             InitiateAttack();
 
-        if (_isChasingPlayer)
+        if (_isChasingPlayer && !enemyHealth.IsAirBorne)
         {
             ChasePlayer();
         }
 
-        if (!_isWait && !_isChasingPlayer)
+        if (!_isWait && !_isChasingPlayer && !enemyHealth.IsAirBorne)
             Patrol();
     }
 

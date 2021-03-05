@@ -5,12 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class ChangeLevel : MonoBehaviour
 {
-    GameObject _player, _camera, _canvases;
+    GameObject _player, _canvases;
+
+    private void Start()
+    {
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _canvases = GameObject.FindGameObjectWithTag("Canvases");
+    }
     public void NextLevelHandler()
     {
-        DontDestroyOnLoad(_player = GameObject.FindGameObjectWithTag("Player"));
-        DontDestroyOnLoad(_camera = GameObject.FindGameObjectWithTag("MainCamera"));
-        DontDestroyOnLoad(_canvases= GameObject.FindGameObjectWithTag("Canvases"));
+        DontDestroyOnLoad(_player);
+        DontDestroyOnLoad(_canvases);
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.buildIndex + 1);
         Time.timeScale = 1f;

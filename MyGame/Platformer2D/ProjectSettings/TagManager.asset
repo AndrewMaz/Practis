@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Canvases
   - NextLevelCanvas
+  - HealthPack
+  - Weapon
+  - BackGround
   layers:
   - Default
   - TransparentFX
