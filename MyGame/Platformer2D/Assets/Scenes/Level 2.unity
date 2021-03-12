@@ -49797,7 +49797,6 @@ GameObject:
   - component: {fileID: 1952045247}
   - component: {fileID: 1952045251}
   - component: {fileID: 1952045250}
-  - component: {fileID: 1952045252}
   - component: {fileID: 1952045249}
   m_Layer: 0
   m_Name: middleground-no-fungus
@@ -50006,18 +50005,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ambient: {fileID: 1952045250}
   prevAudio: {fileID: 1741510536}
---- !u!114 &1952045252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952045246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc0722e9f1adfb4487d3ba383a2f8cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2006637219
 GameObject:
   m_ObjectHideFlags: 0

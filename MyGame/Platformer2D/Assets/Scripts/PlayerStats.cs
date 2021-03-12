@@ -25,10 +25,10 @@ public class PlayerStats : MonoBehaviour
 
     bool _dashCD = true;
 
-    float _damage = 3f;
+    float _damage = 1f;
     float _exp = 0f;
     float _expRequire = 3f;
-    int _lvl = 6;
+    int _lvl = 1;
     int _damageInc = 0;
     float _healthInc = 2;
     float _dashTimer;
